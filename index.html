@@ -1,517 +1,385 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Barbearia Elite - Cortes masculinos, barba, sobrancelha e combo premium. Experiência, estilo e tradição em um só lugar." />
-  <title>Barbearia Elite — Seu estilo começa aqui.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- SEO -->
+    <title>Bella Massa — Restaurante Italiano | Massas, Pizzas e Sobremesas Artesanais</title>
+    <meta name="description" content="Bella Massa Restaurante Italiano em São Paulo. Massas artesanais, pizzas tradicionais, risotos e sobremesas italianas. Reserve sua mesa e viva uma experiência gastronômica inesquecível.">
+    <meta name="keywords" content="restaurante italiano, massas artesanais, pizza margherita, risoto, tiramisu, São Paulo, Bella Massa, comida italiana, reserva de mesa">
+    <meta name="author" content="Bella Massa Restaurante">
+    <meta name="robots" content="index, follow">
 
-  <!-- Favicon (tesoura em SVG inline) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M9.64 7.64a3.5 3.5 0 1 0-5.74 4 3.5 3.5 0 0 0 5.74-4ZM6 11a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm14.36-2.36a3.5 3.5 0 0 0-4.94 0L9.64 14.36a3.5 3.5 0 1 0 4.94 4.94L20.36 13.5l1.06 1.06 1.42-1.42-1.06-1.06L17.5 7.64Zm-2.83 5.66-3.18 3.18a1.5 1.5 0 1 1-2.12-2.12l3.18-3.18 2.12 2.12Z'/%3E%3C/svg%3E" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bella Massa — Restaurante Italiano">
+    <meta property="og:description" content="Sabor italiano que transforma momentos em memórias. Reserve sua mesa.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="pt_BR">
 
-  <!-- CSS principal -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3560/3560081.png" type="image/png">
 </head>
 <body>
-  <!-- ====================== HEADER ====================== -->
-  <header id="header" class="header">
-    <div class="container header-inner">
-      <a href="#home" class="brand" aria-label="Barbearia Elite">
-        <span class="brand-mark">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-            <path d="M9.64 7.64a3.5 3.5 0 1 0-5.74 4 3.5 3.5 0 0 0 5.74-4ZM6 11a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm14.36-2.36a3.5 3.5 0 0 0-4.94 0L9.64 14.36a3.5 3.5 0 1 0 4.94 4.94L20.36 13.5l1.06 1.06 1.42-1.42-1.06-1.06L17.5 7.64Zm-2.83 5.66-3.18 3.18a1.5 1.5 0 1 1-2.12-2.12l3.18-3.18 2.12 2.12Z"/>
-          </svg>
-        </span>
-        <span class="brand-text">
-          <strong>Barbearia <span class="gold">Elite</span></strong>
-          <small>desde 2016</small>
-        </span>
-      </a>
 
-      <nav class="nav" id="nav" aria-label="Navegação principal">
-        <a href="#home">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#agendamento" class="btn btn-gold btn-sm">Agendar</a>
-      </nav>
+    <!-- ===================== HEADER ===================== -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#inicio" class="logo" aria-label="Bella Massa - Página Inicial">
+                <span class="logo-italian">Bella</span><span class="logo-gold">Massa</span>
+            </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+            <nav class="nav" id="nav" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#reservas" class="nav-link">Reservas</a></li>
+                    <li><a href="#localizacao" class="nav-link">Localização</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <a href="#reservas" class="btn btn-primary btn-reservar">Reservar Mesa</a>
+            </nav>
 
-  <!-- ====================== HERO ====================== -->
-  <section id="home" class="hero">
-    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80')"></div>
-    <div class="hero-overlay"></div>
-    <div class="container hero-content fade-up">
-      <span class="eyebrow">★ Barbearia Premium ★</span>
-      <h1>Seu estilo <em>começa</em> aqui.</h1>
-      <p>Cortes clássicos, modernos e acabamento impecável. Na Barbearia Elite, cada detalhe é pensado para destacar a sua melhor versão.</p>
-      <div class="hero-cta">
-        <a href="#agendamento" class="btn btn-gold">Agendar Horário</a>
-        <a href="#servicos" class="btn btn-outline-gold">Ver Serviços</a>
-      </div>
-    </div>
-    <a href="#sobre" class="hero-scroll" aria-label="Rolar para próxima seção">
-      <span></span>
-    </a>
-  </section>
-
-  <!-- ====================== SOBRE ====================== -->
-  <section id="sobre" class="section">
-    <div class="container two-col">
-      <div class="sobre-img reveal">
-        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80" alt="Interior da Barbearia Elite" />
-        <div class="img-badge">
-          <strong>8+</strong>
-          <span>anos de experiência</span>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
-      <div class="sobre-text reveal">
-        <span class="eyebrow dark">Sobre Nós</span>
-        <h2>Tradição, estilo e <span class="gold">atendimento premium</span></h2>
-        <p>Fundada em 2016, a <strong>Barbearia Elite</strong> nasceu da paixão por transformar o cuidado masculino em uma experiência única. Aqui, você encontra profissionais altamente qualificados, ambiente climatizado, bebidas cortesia e um padrão de atendimento que fala por si.</p>
-        <p>Somos referência em cortes clássicos, degradês modernos, barbas desenhadas e combos completos. Venha viver o ritual de cuidado que você merece.</p>
-        <ul class="check-list">
-          <li>✓ Barbeiros premiados e atualizados</li>
-          <li>✓ Produtos importados de alta qualidade</li>
-          <li>✓ Ambiente climatizado e Wi-Fi grátis</li>
-          <li>✓ Estacionamento próprio</li>
-        </ul>
-        <a href="#agendamento" class="btn btn-gold">Agendar meu horário</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== SERVIÇOS ====================== -->
-  <section id="servicos" class="section section-dark">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Nossos Serviços</span>
-        <h2>Serviços pensados para <span class="gold">você</span></h2>
-        <p>Escolha o serviço ideal para o seu momento. Todos incluem lavagem, finalização e café cortesia.</p>
-      </div>
-
-      <div class="services-grid">
-        <article class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
-          </div>
-          <h3>Corte Masculino</h3>
-          <p>Cortes clássicos, modernos e degradês precisos, executados com técnica e personalidade.</p>
-          <div class="service-footer">
-            <span class="price">R$ 55</span>
-            <span class="duration">⏱ 40 min</span>
-          </div>
-        </article>
-
-        <article class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h2a2 2 0 0 1 2 2v2"/><path d="M10 20H8a2 2 0 0 1-2-2v-2"/><path d="M4 10V8a2 2 0 0 1 2-2h2"/><path d="M20 14v2a2 2 0 0 1-2 2h-2"/><circle cx="12" cy="12" r="3"/></svg>
-          </div>
-          <h3>Barba</h3>
-          <p>Modelagem, toalha quente, óleos e finalização com produtos importados.</p>
-          <div class="service-footer">
-            <span class="price">R$ 40</span>
-            <span class="duration">⏱ 30 min</span>
-          </div>
-        </article>
-
-        <article class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c2-3 4-5 6-5s2 2 0 5-2 5 0 5 4-2 6-5 4-5 6-5"/><path d="M3 12v6"/></svg>
-          </div>
-          <h3>Sobrancelha</h3>
-          <p>Design preciso para destacar seu olhar, com pinça e navalha profissional.</p>
-          <div class="service-footer">
-            <span class="price">R$ 25</span>
-            <span class="duration">⏱ 15 min</span>
-          </div>
-        </article>
-
-        <article class="service-card highlight reveal">
-          <span class="badge-top">Mais pedido</span>
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <h3>Combo Premium</h3>
-          <p>Corte + Barba + Sobrancelha + tratamento facial completo. A experiência completa.</p>
-          <div class="service-footer">
-            <span class="price">R$ 110</span>
-            <span class="duration">⏱ 1h 15</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== DIFERENCIAIS ====================== -->
-  <section id="diferenciais" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow dark">Nossos Diferenciais</span>
-        <h2>Por que somos a <span class="gold">escolha certa</span></h2>
-        <p>Pequenos detalhes que fazem da Barbearia Elite uma experiência inesquecível.</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <h3>Profissionais Premiados</h3>
-          <p>Equipe com formação internacional e participação em campeonatos de barbearia.</p>
+    </header>
+</content>
+</invoke>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle fade-in">Bem-vindo ao</p>
+            <h1 class="hero-title fade-in">Bella Massa</h1>
+            <p class="hero-slogan fade-in">"Sabor italiano que transforma momentos em memórias."</p>
+            <div class="hero-buttons fade-in">
+                <a href="#cardapio" class="btn btn-primary">Ver Cardápio</a>
+                <a href="#reservas" class="btn btn-secondary">Fazer Reserva</a>
+            </div>
         </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>
-          </div>
-          <h3>Produtos Premium</h3>
-          <p>Trabalhamos somente com marcas importadas e cruelty-free para o seu cuidado.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3>Ambiente Acolhedor</h3>
-          <p>Espaço climatizado, lounge confortável, Wi-Fi e bebidas cortesia para você.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Agendamento Fácil</h3>
-          <p>Marque seu horário online em segundos, sem ligações e sem espera.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z"/></svg>
-          </div>
-          <h3>Estacionamento Próprio</h3>
-          <p>Estacionamento gratuito e seguro em frente à barbearia, sem preocupação.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          </div>
-          <h3>Atendimento 6 Dias</h3>
-          <p>De terça a domingo, com horários flexíveis para se adequar à sua rotina.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          </div>
-          <h3>Experiência Personalizada</h3>
-          <p>Cada cliente recebe um atendimento único, pensado no seu estilo e necessidade.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-          </div>
-          <h3>Higiene Garantida</h3>
-          <p>Materiais esterilizados e descartáveis em cada atendimento. Sua saúde em primeiro lugar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== GALERIA ====================== -->
-  <section id="galeria" class="section section-dark">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Galeria</span>
-        <h2>Conheça o nosso <span class="gold">espaço</span></h2>
-        <p>Imagens reais da Barbearia Elite. Cada ambiente foi pensado para o seu conforto.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <a href="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80" target="_blank" rel="noopener" class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=600&q=80')">
-          <div class="gallery-overlay"><span>Cadeira Clássica</span></div>
+        <a href="#cardapio" class="hero-scroll" aria-label="Rolar para o cardápio">
+            <span></span>
         </a>
-        <a href="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1200&q=80" target="_blank" rel="noopener" class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80')">
-          <div class="gallery-overlay"><span>Corte Moderno</span></div>
-        </a>
-        <a href="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" target="_blank" rel="noopener" class="gallery-item reveal" style="background-image:url('https://img.magnific.com/fotos-premium/um-homem-esta-em-um-salao-de-beleza-corte-de-cabelo-e-estilo-na-barbearia-cuidado-masculino-para-barba-e-cabelo_217333-1208.jpg')">
-          <div class="gallery-overlay"><span>Ambiente Premium</span></div>
-        </a>
-        <a href="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=80" target="_blank" rel="noopener" class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80')">
-          <div class="gallery-overlay"><span>Barba Perfeita</span></div>
-        </a>
-        <a href="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" target="_blank" rel="noopener" class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80')">
-          <div class="gallery-overlay"><span>Detalhe que faz a diferença</span></div>
-        </a>
-        <a href="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1200&q=80" target="_blank" rel="noopener" class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=600&q=80')">
-          <div class="gallery-overlay"><span>Produtos Premium</span></div>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ====================== CONTADORES ====================== -->
-  <section class="section counters-section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow dark">Nossos Números</span>
-        <h2>Resultados que <span class="gold">falam por nós</span></h2>
-      </div>
-      <div class="counters-grid">
-        <div class="counter-card reveal">
-          <div class="counter" data-target="8" data-suffix="+">0+</div>
-          <span>Anos de Experiência</span>
-        </div>
-        <div class="counter-card reveal">
-          <div class="counter" data-target="5000" data-suffix="+" data-format="k">0+</div>
-          <span>Clientes Atendidos</span>
-        </div>
-        <div class="counter-card reveal">
-          <div class="counter" data-target="98" data-suffix="%">0%</div>
-          <span>de Satisfação</span>
-        </div>
-        <div class="counter-card reveal">
-          <div class="counter" data-target="15" data-suffix="+">0+</div>
-          <span>Profissionais Premiados</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================== DEPOIMENTOS ====================== -->
-  <section id="depoimentos" class="section section-dark">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Depoimentos</span>
-        <h2>O que dizem nossos <span class="gold">clientes</span></h2>
-        <p>Mais de 5.000 clientes satisfeitos. Veja o que estão dizendo sobre a Barbearia Elite.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <blockquote class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Simplesmente a melhor barbearia que já fui. Atendimento impecável, ambiente lindo e o corte ficou perfeito. Recomendo demais!"</p>
-          <footer>
-            <img src="https://i.pravatar.cc/100?img=12" alt="Lucas Martins" />
-            <div>
-              <strong>Lucas Martins</strong>
-              <span>Empresário</span>
+    <!-- ===================== CARDÁPIO ===================== -->
+    <section class="section cardapio" id="cardapio">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Nosso</p>
+                <h2 class="section-title">Cardápio</h2>
+                <p class="section-description">Pratos preparados com ingredientes selecionados e tradição italiana.</p>
             </div>
-          </footer>
-        </blockquote>
 
-        <blockquote class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>"O combo premium vale cada centavo. Saí de lá me sentindo outro homem. Profissionais muito atenciosos e competentes."</p>
-          <footer>
-            <img src="https://i.pravatar.cc/100?img=33" alt="Felipe Andrade" />
-            <div>
-              <strong>Felipe Andrade</strong>
-              <span>Desenvolvedor</span>
-            </div>
-          </footer>
-        </blockquote>
+            <div class="menu-grid">
+                <article class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=800&q=80" alt="Lasanha Tradicional" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Lasanha Tradicional</h3>
+                            <span class="menu-price">R$ 42</span>
+                        </div>
+                        <p class="menu-description">Camadas de massa fresca, molho bolonhesa caseiro, queijos nobres e manjericão fresco.</p>
+                    </div>
+                </article>
 
-        <blockquote class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Agendamento online facilitou muito minha vida. Cheguei, fui atendido na hora, sem esperar. Nota 10 em tudo!"</p>
-          <footer>
-            <img src="https://i.pravatar.cc/100?img=15" alt="Rafael Santos" />
-            <div>
-              <strong>Rafael Santos</strong>
-              <span>Engenheiro</span>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+                <article class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=800&q=80" alt="Fettuccine Alfredo" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Fettuccine Alfredo</h3>
+                            <span class="menu-price">R$ 38</span>
+                        </div>
+                        <p class="menu-description">Massa fresca envolvida em cremoso molho Alfredo com parmesão envelhecido e ervas finas.</p>
+                    </div>
+                </article>
 
-  <!-- ====================== AGENDAMENTO ====================== -->
-  <section id="agendamento" class="section">
-    <div class="container two-col">
-      <div class="agendamento-info reveal">
-        <span class="eyebrow dark">Agendamento</span>
-        <h2>Reserve seu <span class="gold">horário</span></h2>
-        <p>Garanta seu atendimento de forma rápida e prática. Preencha o formulário e entraremos em contato para confirmar.</p>
+                <article class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=800&q=80" alt="Pizza Margherita" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Pizza Margherita</h3>
+                            <span class="menu-price">R$ 45</span>
+                        </div>
+                        <p class="menu-description">Massa de fermentação natural, molho de tomate San Marzano, mussarela de búfala e manjericão.</p>
+                    </div>
+                </article>
 
-        <ul class="contact-list">
-          <li>
-            <div class="ci">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <strong>Endereço</strong>
-              <span>Av. Paulista, 1500 — Sala 02 · São Paulo/SP</span>
-            </div>
-          </li>
-          <li>
-            <div class="ci">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div>
-              <strong>Telefone</strong>
-              <a href="tel:+5511999999999">(11) 99999-9999</a>
-            </div>
-          </li>
-          <li>
-            <div class="ci">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <div>
-              <strong>Horário de funcionamento</strong>
-              <span>Ter–Sex: 09h às 20h · Sáb: 09h às 18h · Dom: 09h às 14h</span>
-            </div>
-          </li>
-        </ul>
-      </div>
+                <article class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1633436374961-09b92742047b?auto=format&fit=crop&w=800&q=80" alt="Risoto de Camarão" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Risoto de Camarão</h3>
+                            <span class="menu-price">R$ 56</span>
+                        </div>
+                        <p class="menu-description">Arroz arbóreo com camarões salteados, vinho branco, caldo de legumes e toque de limão siciliano.</p>
+                    </div>
+                </article>
 
-      <form class="agendamento-form reveal" id="agendamentoForm" novalidate>
-        <h3>Formulário de Agendamento</h3>
+                <article class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="https://www.sabornamesa.com.br/media/k2/items/cache/6cde5e7c0cacc74e6faa7144798ddfa2_XL.jpg" alt="Nhoque ao Molho" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Nhoque ao Molho</h3>
+                            <span class="menu-price">R$ 39</span>
+                        </div>
+                        <p class="menu-description">Nhoques de batata feitos em casa servidos com molho de tomate rústico e parmesão ralado na hora.</p>
+                    </div>
+                </article>
 
-        <div class="field">
-          <label for="nome">Nome completo *</label>
-          <input id="nome" name="nome" type="text" required placeholder="Digite seu nome" />
-          <span class="error" data-error="nome"></span>
+                <article class="menu-card fade-in">
+                    <div class="menu-image">
+                        <img src="https://i.pinimg.com/736x/ac/65/db/ac65db648783045069e34d1b14f13d5b.jpg" alt="Tiramisu" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Tiramisu</h3>
+                            <span class="menu-price">R$ 22</span>
+                        </div>
+                        <p class="menu-description">Clássico italiano com camadas de biscoito champagne, café espresso, mascarpone e cacau em pó.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</content>
+</invoke>
+    <!-- ===================== GALERIA ===================== -->
+    <section class="section galeria" id="galeria">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Conheça</p>
+                <h2 class="section-title">Nossa Galeria</h2>
+                <p class="section-description">Imagens que traduzem a essência da culinária e do ambiente Bella Massa.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80" alt="Massas italianas frescas" loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Pizza artesanal" loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80" alt="Pizza no forno a lenha" loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="https://www.giallozafferano.com.br/images/5-598/Tiramisu_1200x800.jpg" alt="Tiramisu italiano" loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Ambiente do restaurante" loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Mesa de restaurante italiano" loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=900&q=80" alt="Risoto italiano" loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="//images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=900&q=80" alt="Vinho e culinária" loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="https://i.pinimg.com/736x/35/64/4d/35644dcb42a7a460c664fc5238b5ff1c.jpg" alt="Lasanha " loading="lazy">
+                </figure>
+                <figure class="gallery-item fade-in">
+                    <img src="https://i.pinimg.com/736x/87/79/02/877902efc7594daf906097d58505a374.jpg" alt="Vinho e culinária" loading="lazy">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RESERVAS ===================== -->
+    <section class="section reservas" id="reservas">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Garanta sua</p>
+                <h2 class="section-title">Reserva</h2>
+                <p class="section-description">Reserve sua mesa e viva uma experiência gastronômica única.</p>
+            </div>
+
+            <form class="reservation-form fade-in" id="reservationForm" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        <span class="error-message" id="erro-nome"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                        <span class="error-message" id="erro-telefone"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        <span class="error-message" id="erro-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pessoas">Número de Pessoas</label>
+                        <select id="pessoas" name="pessoas" required>
+                            <option value="">Selecione</option>
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4">4 pessoas</option>
+                            <option value="5">5 pessoas</option>
+                            <option value="6">6 pessoas</option>
+                            <option value="7">7 pessoas</option>
+                            <option value="8">8+ pessoas</option>
+                        </select>
+                        <span class="error-message" id="erro-pessoas"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data" required>
+                        <span class="error-message" id="erro-data"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horario">Horário</label>
+                        <input type="time" id="horario" name="horario" required>
+                        <span class="error-message" id="erro-horario"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Reservar Agora</button>
+            </form>
+        </div>
+    </section>
+</content>
+</invoke>
+    <!-- ===================== LOCALIZAÇÃO ===================== -->
+    <section class="section localizacao" id="localizacao">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Onde</p>
+                <h2 class="section-title">Estamos</h2>
+                <p class="section-description">Venha nos visitar e saborear o melhor da Itália em São Paulo.</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-info fade-in">
+                    <h3>Restaurante Bella Massa</h3>
+                    <p class="location-description">Estamos localizados no coração de São Paulo, prontos para receber você e sua família com o melhor da culinária italiana.</p>
+
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Endereço</strong>
+                                <p>Rua Itália, 250 — São Paulo/SP</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Telefone</strong>
+                                <p>(11) 99999-9999</p>
+                            </div>
+                        </li>
+                        <li id="contato">
+                            <span class="contact-icon">✉</span>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p>contato@bellamassa.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>Horário</strong>
+                                <p>Terça a Domingo — 18h às 23h</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="location-map fade-in">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1209974393094!2d-46.65657168502204!3d-23.561616067525186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da67b7e1%3A0x4b1b1b1b1b1b1b1b!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa de localização do restaurante Bella Massa">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo footer-logo">
+                    <span class="logo-italian">Bella</span><span class="logo-gold">Massa</span>
+                </a>
+                <p class="footer-text">Sabor italiano que transforma momentos em memórias.</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" class="social-link">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05A4.28 4.28 0 0 0 16.11 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.67.11.99C8.28 9.09 5.11 7.38 3 4.79c-.37.64-.58 1.38-.58 2.17 0 1.49.76 2.81 1.91 3.58-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21-.36.1-.74.15-1.13.15-.28 0-.54-.03-.8-.08.55 1.7 2.13 2.94 4 2.97A8.6 8.6 0 0 1 2 18.57 12.13 12.13 0 0 0 8.56 20.5c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="field">
-          <label for="telefone">Telefone / WhatsApp *</label>
-          <input id="telefone" name="telefone" type="tel" required placeholder="(11) 99999-9999" />
-          <span class="error" data-error="telefone"></span>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Bella Massa. Todos os direitos reservados.</p>
+            </div>
         </div>
+    </footer>
 
-        <div class="field">
-          <label for="servico">Serviço *</label>
-          <select id="servico" name="servico" required>
-            <option value="">Selecione um serviço</option>
-            <option value="corte">Corte Masculino — R$ 55</option>
-            <option value="barba">Barba — R$ 40</option>
-            <option value="sobrancelha">Sobrancelha — R$ 25</option>
-            <option value="combo">Combo Premium — R$ 110</option>
-          </select>
-          <span class="error" data-error="servico"></span>
-        </div>
+    <!-- Botão voltar ao topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 
-        <div class="field">
-          <label for="data">Data desejada *</label>
-          <input id="data" name="data" type="date" required />
-          <span class="error" data-error="data"></span>
-        </div>
-
-        <div class="field">
-          <label for="horario">Horário preferido</label>
-          <select id="horario" name="horario">
-            <option value="">Qualquer horário</option>
-            <option>09:00</option><option>10:00</option><option>11:00</option>
-            <option>14:00</option><option>15:00</option><option>16:00</option>
-            <option>17:00</option><option>18:00</option><option>19:00</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="mensagem">Observações</label>
-          <textarea id="mensagem" name="mensagem" rows="3" placeholder="Algo que devemos saber?"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-gold btn-block">Confirmar agendamento</button>
-        <p class="form-feedback" id="formFeedback" hidden></p>
-      </form>
-    </div>
-  </section>
-
-  <!-- ====================== FOOTER ====================== -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="#home" class="brand">
-          <span class="brand-mark">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-              <path d="M9.64 7.64a3.5 3.5 0 1 0-5.74 4 3.5 3.5 0 0 0 5.74-4ZM6 11a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm14.36-2.36a3.5 3.5 0 0 0-4.94 0L9.64 14.36a3.5 3.5 0 1 0 4.94 4.94L20.36 13.5l1.06 1.06 1.42-1.42-1.06-1.06L17.5 7.64Zm-2.83 5.66-3.18 3.18a1.5 1.5 0 1 1-2.12-2.12l3.18-3.18 2.12 2.12Z"/>
-            </svg>
-          </span>
-          <span class="brand-text">
-            <strong>Barbearia <span class="gold">Elite</span></strong>
-            <small>desde 2016</small>
-          </span>
-        </a>
-        <p class="footer-about">Seu estilo começa aqui. Cortes clássicos, modernos e atendimento premium para o homem que se cuida.</p>
-        <div class="socials">
-          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .15 5.34.15 11.92c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.93 11.93 0 0 0 5.8 1.48h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.19-1.24-6.18-3.48-8.44ZM12.08 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.72.97 1-3.63-.24-.37a9.85 9.85 0 0 1-1.52-5.26c0-5.46 4.45-9.9 9.9-9.9 2.65 0 5.13 1.03 7 2.9a9.84 9.84 0 0 1 2.9 7c0 5.45-4.45 9.88-9.92 9.88Z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <h4>Links rápidos</h4>
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#agendamento">Agendar</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contato</h4>
-        <ul class="footer-contact">
-          <li>📍 Av. Paulista, 1500 — Sala 02<br />Bela Vista · São Paulo/SP</li>
-          <li>📞 (11) 99999-9999</li>
-          <li>✉️ contato@barbeariaelite.com</li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Horário de funcionamento</h4>
-        <ul class="footer-contact">
-          <li><strong>Terça a Sexta</strong><br />09h às 20h</li>
-          <li><strong>Sábado</strong><br />09h às 18h</li>
-          <li><strong>Domingo</strong><br />09h às 14h</li>
-          <li><strong>Segunda</strong><br />Fechado</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container copyright">
-      <p>© <span id="year"></span> Barbearia Elite — Todos os direitos reservados. Feito com <span class="gold">♥</span> para homens de estilo.</p>
-    </div>
-  </footer>
-
-  <!-- ====================== WHATSAPP FLUTUANTE ====================== -->
-  <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20na%20Barbearia%20Elite." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">
-      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .15 5.34.15 11.92c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.93 11.93 0 0 0 5.8 1.48h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.19-1.24-6.18-3.48-8.44ZM12.08 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.72.97 1-3.63-.24-.37a9.85 9.85 0 0 1-1.52-5.26c0-5.46 4.45-9.9 9.9-9.9 2.65 0 5.13 1.03 7 2.9a9.84 9.84 0 0 1 2.9 7c0 5.45-4.45 9.88-9.92 9.88Zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17c-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
-    </svg>
-    <span class="whatsapp-pulse"></span>
-  </a>
-
-  <!-- Botão "voltar ao topo" -->
-  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
-
-  <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
